@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.blue {
+    width: 20rem;
+    height: 15rem;
+    background-color: violet;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid skyblue;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    animation: rainbow 4000ms infinite ease;
+}
+button {
+    border: none;
+    width: 6rem;
+    height: 2.5rem;
+    color: snow;
+    background-color: springgreen;
+    animation: rainbowkey 4000ms infinite ease;
+}
+.something {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: violet;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: pink;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+@keyframes rainbowkey {
+    0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: violet;
+    }
+    50% {
+        background-color: pink;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: greenyellow;
+    }
+}
